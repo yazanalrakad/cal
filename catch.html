@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculater</h1>
+    <input type="text" placeholder="first-number" value="" id="first-number">
+    <input type="text" placeholder="second-number" id="second-number">
+    <button onclick="cale(1)">plus</button>
+    <button onclick="cale(2)">minus</button>
+    <button onclick="cale(3)">multiple</button>
+    <button onclick="cale(4)">devide</button>
+    <button onclick="cale(5)">power</button>
+    <button onclick="cale(6)">square root</button>
+    <p id="result"></p>
+    <script>
+
+        function plus()
+        {
+        let x = Number(document.getElementById("first-number").value);
+        let y = Number(document.getElementById("second-number").value);
+        let z = x+y;
+        // document.getElementById("result").innerHTML = "the result is " + z + "."
+        // return z
+        console.log (z)
+        
+        }
+        function minus()
+        {
+        let x = Number(document.getElementById("first-number").value);
+        let y = Number(document.getElementById("second-number").value);
+        let z = x-y;
+        // document.getElementById("result").innerHTML = "the result is " + z + "."
+        // return z
+        console.log (z)
+        }
+        function multiple()
+        {
+        let x = Number(document.getElementById("first-number").value);
+        let y = Number(document.getElementById("second-number").value);
+        let z = x*y;
+        // document.getElementById("result").innerHTML = "the result is " + z + "."
+        // return z
+        console.log (z)
+        }
+        function devide()
+        {
+        let x = Number(document.getElementById("first-number").value);
+        let y = Number(document.getElementById("second-number").value);
+        let z = x/y;
+        // document.getElementById("result").innerHTML = "the result is " + z + "."
+        // return z
+        console.log (z)
+        }
+        function power()
+        {
+        let x = Number(document.getElementById("first-number").value);
+        let y = Number(document.getElementById("second-number").value);
+        let z = x**y;
+        // document.getElementById("result").innerHTML = "the result is " + z + "."
+         //return z
+        console.log (z)
+        }
+        function root()
+        {
+        let x = Number(document.getElementById("first-number").value);
+        let y = Number(document.getElementById("second-number").value);
+        let z = Math.sqrt(x)
+        // document.getElementById("result").innerHTML = "the result is " + z + "."
+        // return z
+        console.log (z)
+        }
+        
+       </script>

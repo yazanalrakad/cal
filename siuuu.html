@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculater</h1>
+    <input type="text" placeholder="first-number" value="" id="first-number">
+    <input type="text" placeholder="second-number" id="second-number">
+    <button onclick="calc(1)">plus</button>
+    <button onclick="calc(2)">minus</button>
+    <button onclick="calc(3)">multiple</button>
+    <button onclick="calc(4)">devide</button>
+    <button onclick="calc(5)">power</button>
+    <button onclick="calc(6)">square root</button>
+    <p id="result"></p>
+    <script>
+        function calc(CalcType)
+        {
+        
+            let x = Number(document.getElementById("first-number").value);
+        let y = Number(document.getElementById("second-number").value);
+            if(CalcType==1)
+            {
+            z= x+y;
+            }
+            
+            if(CalcType ==2){
+            z= x-y
+            }
+            if(CalcType ==3){
+            z= x*y
+            }
+            if(CalcType ==4){
+            z= x/y
+            }
+            if(CalcType ==5){
+            z= x**y
+            }
+            if(CalcType ==6){
+            z= Math.sqrt(x)
+        
+         }
+         document.getElementById("result").innerHTML= "Das Ergebniss" +z+ "."
+        }
+       </script>
